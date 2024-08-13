@@ -1,0 +1,2838 @@
+body {
+  overflow: hidden !important;
+  font-family: "SF UI Text Regular";
+  height: 100%;
+}
+
+.progress-wrapper {
+  padding-bottom: 20px;
+  display: none;
+}
+
+.progress-bar-container {
+  width: calc(100% - 100px);
+  width: -moz-calc(100% - 100px);
+}
+
+.progress-bar-container-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 7px;
+  background-color: #08f !important;
+}
+
+.progress {
+  height: 7px;
+}
+
+#progress-percentage {
+  font-size: 14px;
+  font-family: "SF UI Text Medium";
+}
+
+.form-check-input {
+  position: absolute;
+  margin-top: 0.15rem;
+  margin-left: -1.25rem;
+}
+
+.calendar-left-sidebar {
+  position: relative;
+  height: 100%;
+  width: 260px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  border-right: 1px solid #bbb;
+  padding: 10px 0px 10px 0px;
+  overflow: auto;
+}
+
+.calendar-left-sidebar-wrapper {
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.calendar-left-side-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar-left-side-header > span.header-option {
+  font-size: 12px;
+  font-family: "SF UI Text Medium";
+  color: #08f;
+  cursor: pointer;
+}
+
+.calendar-left-side-search {
+  padding: 2px 10px 2px 5px;
+  background: #f1f1f1;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.calendar-left-side-search > input {
+  font-size: 14px;
+  height: 30px;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  width: 100%;
+}
+
+.calendar-main-content {
+  position: relative;
+  height: 100%;
+  width: calc(100% - 540px);
+  width: -moz-calc(100% - 540px);
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  /*overflow: hidden;*/
+}
+
+.calendar-right-sidebar {
+ /* position: relative;
+  height: 100%;
+  width: 280px;
+  padding: 10px 0px 10px 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-direction: column;
+  border-left: 1px solid #bbb;*/
+}
+
+.calendar-right-sidebar > div {
+/*  height: 100%;*/
+}
+
+.calendar-content-wrapper {
+  position: absolute;
+  height: calc(100% - 48px);
+  height: -moz-calc(100% - 48px);
+  width: 100%;
+  display: flex;
+}
+
+.doctor-list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.doctor-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11.5px 0px;
+  cursor: pointer;
+}
+
+.doctor-name-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.doctor-name {
+  font-size: 14px;
+  font-family: "SF UI Text Regular";
+  font-weight: 500;
+  color: #444;
+}
+
+.doctor-details-dot {
+  height: 10px;
+  width: 10px;
+  background: #08f;
+  border-radius: 10px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.doctor-selected-arrow-wrapper {
+  padding-right: 5px;
+}
+
+.doctor-list-item.active .material-icons {
+  visibility: visible;
+}
+
+.doctor-selected-arrow-wrapper > .material-icons {
+  visibility: hidden;
+  color: #08f;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.filter-content-label {
+  font-family: "SF UI Text Regular";
+  font-size: 14px;
+  color: #444;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.calendar-filter-wrapper > div {
+  padding-top: 11.5px;
+  padding-bottom: 11.5px;
+}
+
+.calendar-filter-wrapper {
+  margin-top: 10px;
+}
+
+.calendar-setting-wrapper,
+.calendar-others-wrapper {
+  margin-top: 20px;
+}
+
+.calendar-setting-wrapper .form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#filter-wrapper {
+  margin-top: 20px;
+}
+
+.calendar-right-side-header > span.header-title,
+.calendar-left-side-header > span.header-title {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "SF UI Text Semibold";
+}
+
+.calendar-right-side-header {
+  flex-shrink: 0;
+}
+
+.fc-center > h2 {
+  font-size: 22px !important;
+  font-family: "SF UI Text Medium";
+  color: #212529 !important;
+}
+
+.fc-time-grid .fc-slats .fc-minor td {
+  border-top-style: solid !important;
+  border-top-color: #e1e1e170 !important;
+}
+
+.fc-unthemed td.fc-today {
+  background: #d440880a !important;
+}
+
+hr.fc-divider {
+  padding: 0px;
+}
+
+.fc-axis > span {
+  font-size: 12px;
+  font-family: "SF UI Text Medium";
+}
+
+.fc-axis {
+  width: 60px !important;
+}
+
+.fc-unthemed .fc-content,
+.fc-unthemed .fc-divider,
+.fc-unthemed .fc-list-heading td,
+.fc-unthemed .fc-list-view,
+.fc-unthemed .fc-popover,
+.fc-unthemed .fc-row,
+.fc-unthemed tbody,
+.fc-unthemed td,
+.fc-unthemed th,
+.fc-unthemed thead {
+  border-color: #ddddddab;
+}
+
+.fc-center {
+  cursor: pointer;
+}
+.fc-row .fc-widget-header {
+  height: 30px !important;
+}
+.fc th {
+  vertical-align: inherit !important;
+}
+.fc-button {
+  box-shadow: none !important;
+}
+.fc-button:focus {
+  box-shadow: none !important;
+}
+.fc-ltr .fc-axis {
+  text-align: center !important;
+}
+.fc-event {
+  overflow: inherit !important;
+}
+
+/* session State */
+
+.session-state-wrapper {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.session-state {
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 60px;
+}
+
+.session-state-number-wrapper {
+  background: white;
+  padding: 4px;
+}
+
+.session-state-number-wrapper > span {
+  font-family: "SF UI Text Semibold";
+  font-size: 28px;
+}
+
+.session-state-detail-wrapper {
+  color: #fff;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.session-state-detail-wrapper > span {
+  font-size: 11px;
+  font-family: "SF UI Text Regular";
+}
+
+.session-state.state-schedule {
+  border: 1px solid #f5b341;
+}
+
+.session-state.state-waiting {
+  border: 1px solid #54c151;
+}
+
+.session-state.state-engage {
+  border: 1px solid #36c9e6;
+}
+
+.session-state.state-checkout {
+  border: 1px solid #df5c5c;
+}
+
+.session-state.state-schedule > .session-state-number-wrapper > span {
+  color: #f5b341;
+}
+
+.session-state.state-waiting > .session-state-number-wrapper > span {
+  color: #54c151;
+}
+
+.session-state.state-engage > .session-state-number-wrapper > span {
+  color: #36c9e6;
+}
+
+.session-state.state-checkout > .session-state-number-wrapper > span {
+  color: #df5c5c;
+}
+
+.session-state.state-schedule > .session-state-detail-wrapper {
+  background: #f5b341;
+}
+
+.session-state.state-waiting > .session-state-detail-wrapper {
+  background: #54c151;
+}
+
+.session-state.state-engage > .session-state-detail-wrapper {
+  background: #36c9e6;
+}
+
+.session-state.state-checkout > .session-state-detail-wrapper {
+  background: #df5c5c;
+}
+
+/* inactive classes */
+
+.session-state.inactive {
+  border: 1px solid #e2e2e2;
+}
+
+.session-state.inactive > .session-state-detail-wrapper {
+  background: white;
+  border-top: 1px solid #e2e2e2;
+}
+
+.session-state.inactive > .session-state-detail-wrapper > span {
+  color: #aaa;
+}
+
+.session-state.inactive > .session-state-number-wrapper > span {
+  color: #aaa;
+}
+
+.today-session-list {
+  margin-top: 20px;
+  flex-shrink: 1;
+  overflow: auto;
+  margin-right: -15px;
+  padding-right: 15px;
+  margin-left: -15px;
+  padding-left: 15px;
+  height: calc(100% - 140px);
+  height: -moz-calc(100% - 140px);
+}
+
+.today-session-list > .no-sessions {
+  font-size: 13px;
+}
+
+/* session List */
+
+.session-list-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+  margin: 0px -15px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+.session-list-item > .session-list-item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100%;
+}
+
+.session-list-item-extra > .status-button {
+  float: right;
+}
+
+.session-list-item-left {
+  display: flex;
+  flex-shrink: 1;
+  margin-right: 10px;
+  align-items: baseline;
+}
+
+.session-list-item-extra .material-icons {
+  color: #777 !important;
+}
+.session-list-item-extra {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.session-list-item-extra span.state-info {
+  font-size: 11px;
+  font-family: "SF UI Text Regular";
+  margin-right: 10px;
+}
+.patient-time-wrapper > .session-time {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Appointment State */
+
+.appointment-state-wrapper {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.appointment-state {
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 60px;
+}
+
+.appointment-state-number-wrapper {
+  background: white;
+  padding: 4px;
+}
+
+.appointment-state-number-wrapper > span {
+  font-family: "SF UI Text Semibold";
+  font-size: 28px;
+}
+
+.appointment-state-detail-wrapper {
+  color: #fff;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.appointment-state-detail-wrapper > span {
+  font-size: 11px;
+  font-family: "SF UI Text Regular";
+}
+
+.appointment-state.state-schedule {
+  border: 1px solid #f5b341;
+}
+
+.appointment-state.state-waiting {
+  border: 1px solid #54c151;
+}
+
+.appointment-state.state-engage {
+  border: 1px solid #36c9e6;
+}
+
+.appointment-state.state-checkout {
+  border: 1px solid #df5c5c;
+}
+
+.appointment-state.state-schedule > .appointment-state-number-wrapper > span {
+  color: #f5b341;
+}
+
+.appointment-state.state-waiting > .appointment-state-number-wrapper > span {
+  color: #54c151;
+}
+
+.appointment-state.state-engage > .appointment-state-number-wrapper > span {
+  color: #36c9e6;
+}
+
+.appointment-state.state-checkout > .appointment-state-number-wrapper > span {
+  color: #df5c5c;
+}
+
+.appointment-state.state-schedule > .appointment-state-detail-wrapper {
+  background: #f5b341;
+}
+
+.appointment-state.state-waiting > .appointment-state-detail-wrapper {
+  background: #54c151;
+}
+
+.appointment-state.state-engage > .appointment-state-detail-wrapper {
+  background: #36c9e6;
+}
+
+.appointment-state.state-checkout > .appointment-state-detail-wrapper {
+  background: #df5c5c;
+}
+
+/* inactive classes */
+
+.appointment-state.inactive {
+  border: 1px solid #e2e2e2;
+}
+
+.appointment-state.inactive > .appointment-state-detail-wrapper {
+  background: white;
+  border-top: 1px solid #e2e2e2;
+}
+
+.appointment-state.inactive > .appointment-state-detail-wrapper > span {
+  color: #aaa;
+}
+
+.appointment-state.inactive > .appointment-state-number-wrapper > span {
+  color: #aaa;
+}
+
+.today-appointment-list {
+  margin-top: 20px;
+  flex-shrink: 1;
+  overflow: auto;
+  margin-right: -15px;
+  padding-right: 15px;
+  margin-left: -15px;
+  padding-left: 15px;
+  height: calc(100% - 140px);
+  height: -moz-calc(100% - 140px);
+}
+
+.today-appointment-list > .no-appointments {
+  font-size: 13px;
+}
+
+/* Appointment List */
+
+.appointment-list-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+  margin: 0px -15px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.appointment-list-item > .appointment-list-item-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100%;
+}
+
+.appointment-list-item-extra > .status-button {
+  float: right;
+}
+
+.appointment-list-item-left {
+  display: flex;
+  flex-shrink: 1;
+  margin-right: 10px;
+  align-items: baseline;
+}
+
+.appointment-list-item-extra .material-icons {
+  color: #777 !important;
+}
+
+.patient-profile-picture {
+  height: 50px;
+  width: 50px;
+  background: #f1f1f1;
+  border-radius: 50px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  display: none;
+}
+
+.patient-name-time-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 45px;
+  flex-shrink: 1;
+}
+
+.patient-name-wrapper {
+  font-size: 13px;
+  font-family: "SF UI Text Regular";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.appointment-list-item .patient-name-wrapper > .patient-name {
+  font-family: "SF UI Text Regular" !important;
+}
+
+.patient-name-wrapper .patient-name {
+  font-family: "SF UI Text Medium";
+  cursor: pointer;
+}
+
+.patient-time-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.patient-time-wrapper > .appointment-time {
+  font-size: 12px;
+  color: #777;
+}
+
+.appointment-list-item-extra {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.appointment-list-item-extra span.state-info {
+  font-size: 11px;
+  font-family: "SF UI Text Regular";
+  margin-right: 10px;
+}
+
+.status-button {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  height: 35px;
+}
+
+.status-text {
+  display: block;
+  position: relative;
+  top: 8px;
+  transition: top 0.35s;
+  padding: 0;
+  text-align: center;
+  height: 35px;
+}
+
+.status-text.status-schedule {
+  color: #f5b341;
+}
+
+.status-text.status-waiting {
+  color: #54c151;
+}
+
+.status-text.status-engage {
+  color: #36c9e6;
+}
+
+.status-done {
+  color: #df5c5c;
+  cursor: pointer;
+}
+
+.status-loading {
+  color: #444;
+}
+
+.hidden {
+  display: none;
+}
+
+.status-button:hover .status-text {
+  top: -30px;
+}
+
+.fc .fc-button-group > * {
+  outline: none;
+}
+
+/*.fc-corner-left{
+      padding-left: 0px !important
+  }*/
+
+.fc-toolbar .fc-state-active,
+.fc-toolbar .ui-state-active {
+  z-index: 4;
+  background: #08f;
+  color: white;
+  outline: none;
+  text-shadow: none;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.fc-day-grid.fc-unselectable {
+  overflow: hidden !important;
+}
+
+.fc-day-grid.fc-unselectable > .fc-row.fc-week.fc-widget-content {
+  overflow: hidden !important;
+}
+
+.fc-left button {
+  margin: 0px !important;
+}
+
+.fc-day-header > span {
+  font-size: 14px;
+}
+
+.fc-today > span {
+  color: #ff1515;
+}
+
+.fc-leftsidebar-button.fc-button.fc-state-default.fc-corner-left {
+  padding-left: 0px !important;
+}
+
+.fc-button:focus {
+  outline: none;
+}
+
+.fc-settings-button {
+  padding-right: 0px !important;
+}
+
+.fc-expand-button {
+  padding-left: 0px !important;
+}
+
+.fc-toolbar button {
+  position: relative;
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  height: 30px;
+  color: #08f;
+  font-family: "SF UI Text Medium";
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.fc-icon {
+  height: 1.5em;
+  line-height: 1.5em;
+}
+
+/* Date picker css */
+
+#ui-datepicker-div {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+
+.ui-widget-header {
+  border: 0px solid;
+}
+
+.ui-datepicker-month {
+  margin-right: 15px !important;
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  width: 40%;
+  font-size: 15px;
+}
+
+table.ui-datepicker-calendar th > span {
+  font-size: 13px;
+  font-family: "SF UI Text Medium";
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border: 0px solid;
+  background: #fff;
+  font-weight: normal;
+  color: #555 !important;
+  text-align: center;
+  font-size: 15px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui-datepicker-buttonpane.ui-widget-content {
+  border: 0px solid;
+  margin: 0px;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+  border: 0px solid #ccc;
+  background-color: #fff !important;
+  color: #08f !important;
+  font-weight: bold;
+}
+
+.ui-state-default {
+  outline: none !important;
+}
+
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+  font-weight: bold !important;
+  color: #08f !important;
+  font-family: "SF UI Text Medium";
+}
+
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+  opacity: 1;
+  filter: Alpha(Opacity=100);
+  font-weight: normal;
+  color: #08f !important;
+  font-family: "SF UI Text Regular";
+}
+
+.ui-datepicker-div-header:after {
+  position: absolute;
+  top: -8px;
+  display: inline-block;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #08f;
+  content: "";
+  right: 50%;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px !important;
+  background: white !important;
+  border: 0px solid !important;
+  font-weight: normal !important;
+  color: #08f !important;
+  cursor: pointer;
+}
+
+.ui-datepicker .ui-datepicker-prev {
+  left: 0px !important;
+}
+
+.ui-datepicker .ui-datepicker-next {
+  right: 0px !important;
+}
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+  margin-top: 0px !important;
+  top: 3px !important;
+  margin-left: 0px;
+  left: 15%;
+}
+
+.more-option-popup a {
+  font-family: "SF UI Text Regular";
+}
+
+.more-option-popup li.shown > a {
+  font-family: "SF UI Text Medium";
+}
+
+.more-option-popup li:hover > a {
+  font-family: "SF UI Text Medium";
+  color: #08f !important;
+}
+
+.more-option-popup,
+#clinic-list {
+  padding: 5px !important;
+  min-width: 150px !important;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: #fff;
+  border-radius: 5px;
+  /* position: absolute !important; */
+  z-index: 1001 !important;
+}
+
+#calendar-more-views:after {
+  position: absolute;
+  top: -8px;
+  display: inline-block;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #08f;
+  content: "";
+  right: 10px;
+}
+
+.more-option-popup > li {
+  padding: 8px 5px !important;
+  font-size: 13px !important;
+}
+
+.more-option-popup {
+  cursor: pointer;
+}
+
+.more-option-popup li.active > a {
+  color: #08f !important;
+  font-family: "SF UI Text Medium";
+}
+
+.more-option-popup li.active {
+  background: #fff;
+}
+
+#clinic-list {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-top: none;
+  top: -2px;
+  float: right;
+  position: relative;
+  margin-right: 10px;
+  /* left: 10px; */
+  -moz-box-shadow: 0 1px 6px #777;
+  -webkit-box-shadow: 0 1px 6px #777;
+  -o-box-shadow: 0 1px 6px #777;
+  box-shadow: 0 1px 6px #777;
+}
+
+#clinic-list:after {
+  position: absolute;
+  top: -8px;
+  display: inline-block;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #08f;
+  content: "";
+  left: 5px;
+}
+
+select,
+button,
+input {
+  outline: none !important;
+}
+
+.fc-time-grid-event.fc-v-event.fc-event.fc-start.fc-end.my-custom-class.fc-draggable.fc-resizable {
+  padding-top: 2px;
+  padding-left: 4px;
+  outline: none !important;
+  font-size: 13px;
+  right: 8px !important;
+  display: flex;
+  margin: 1px !important;
+  border: 1px solid;
+}
+
+.appoint-cancelled {
+  text-decoration: line-through !important;
+  opacity: 0.5;
+}
+
+.fc-content .fc-time {
+  font-family: "SF UI Text Regular";
+  font-size: 10px;
+}
+
+.fc-month-view .fc-content .fc-time {
+  font-size: 10px !important;
+}
+
+.fc-content .fc-title {
+  font-family: "SF UI Text Medium";
+  font-size: 10px !important;
+}
+
+.fc-time-grid .fc-slats td {
+  height: 2.2em !important;
+}
+
+.fc-button.fc-state-default {
+  text-transform: capitalize;
+}
+
+/* Popover container css */
+
+.popup-wrapper {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 7px;
+  padding: 10px 15px;
+  padding-bottom: 0px;
+  overflow: hidden;
+  z-index: 1004;
+  background: #fff;
+  -moz-box-shadow: 0 1px 6px #777;
+  -webkit-box-shadow: 0 1px 6px #777;
+  -o-box-shadow: 0 1px 6px #777;
+  box-shadow: 0 1px 6px #777;
+  text-shadow: 1px 1px 0 #fff;
+  cursor: default;
+  min-width: 420px;
+  max-width: 420px;
+}
+
+#add-referral-doctor-popover > .popup-wrapper {
+  min-width: 300px !important;
+}
+
+.popup-wrapper > .patient-detail-wrapper {
+  display: flex;
+  border-bottom: 1px solid #c3c1c1;
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-left: 15px;
+  padding-right: 0px;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.patient-detaile-left {
+  display: flex;
+}
+
+.popup-wrapper .patient-profile-photo {
+  width: 44px;
+  height: 44px;
+  border-radius: 30px;
+  margin-right: 10px;
+  background-size: auto 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.popup-wrapper .patient-name-wrapper {
+  margin-right: 10px;
+  flex-shrink: 1;
+  width: 270px;
+}
+
+.patient-name-localid-wrapper > span.patient-name {
+  font-size: 14px;
+  color: #08f;
+}
+
+.patient-name-localid-wrapper > span.patient-localid {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.patient-detail-wrapper .patient-contact-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.patient-contact-wrapper span.patient-contact {
+  font-size: 12px;
+  color: #666;
+}
+
+.patient-contact-wrapper .dot-seperator {
+  height: 7px;
+  width: 7px;
+  border-radius: 10px;
+  background: #08f;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.patient-contact-wrapper span.patient-gender-age {
+  font-size: 12px;
+  color: #666;
+}
+
+.patient-detail-wrapper > .patient-detail-right {
+  padding-top: 3px;
+  margin-left: 0px;
+}
+
+.appointment-doctor-wrapper span.edit-button {
+  font-size: 12px;
+  color: #08f;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.appointment-doctor-wrapper span.delete-button {
+  font-size: 12px;
+  color: red;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.appointment-detail-section {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+.appointment-doctor-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.appointment-doctor-wrapper > div {
+  display: flex;
+  align-items: center;
+}
+
+.appointment-doctor-wrapper .dot-seperator {
+  height: 10px;
+  width: 10px;
+  border-radius: 10px;
+  background: #08f;
+  margin-right: 10px;
+}
+
+.appointment-doctor-wrapper .doctor-name > span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #222;
+  font-family: "SF UI Text Medium";
+}
+
+.appointment-time > span {
+  font-size: 12px;
+  color: #555;
+}
+
+.section-title {
+  margin-bottom: 5px;
+}
+
+.section-title > span {
+  font-size: 13px;
+  font-weight: 500;
+  color: #222;
+  font-family: "SF UI Text Medium";
+}
+
+.section-detail > span {
+  font-size: 12px;
+  color: #666;
+}
+
+.section-detail.dark > span {
+  color: #444;
+}
+
+.footer-wrapper {
+  display: flex;
+  margin-top: 15px;
+  flex-direction: row;
+  margin-left: -15px;
+  margin-right: -15px;
+  border-top: 1px solid #c7c5c5;
+  background: #f7f5f5;
+  padding: 7px 15px;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #08f;
+  min-width: 390px;
+}
+
+.footer-wrapper span.danger {
+  color: red;
+}
+
+.footer-wrapper span {
+  cursor: pointer;
+}
+
+.bc:after {
+  position: absolute;
+  bottom: 0px;
+  display: inline-block;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  border-bottom: 7px solid #08f;
+  content: "";
+  left: 50%;
+  z-index: 100000;
+}
+.tc:after {
+  position: absolute;
+  top: 0px;
+  display: inline-block;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  border-top: 7px solid #08f;
+  content: "";
+  left: 50%;
+  z-index: 100000;
+}
+
+.lc:after {
+  position: absolute;
+  top: 47%;
+  display: inline-block;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #08f;
+  content: "";
+  left: -12px;
+  z-index: 100000000;
+}
+
+.tl:after {
+  position: absolute;
+  top: 4px;
+  display: inline-block;
+  border-top: 7px solid transparent !important;
+  border-bottom: 7px solid transparent !important;
+  border-left: 7px solid #08f !important;
+  border-right: 0px solid #08f !important;
+  content: "";
+  left: -6px;
+  z-index: 100000;
+}
+.tr:after {
+  position: absolute;
+  top: 4px;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 7px solid #08f;
+  content: "";
+  right: -6px;
+  z-index: 1000001;
+}
+/*.tlside:after{
+      position: relative;
+      top: 50%;
+      display: inline-block;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 7px solid #08f;
+      content: '';
+      left: 0px;
+      z-index: 100000;
+  }*/
+
+.tip {
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid transparent;
+}
+
+.tlside .tip {
+  position: relative;
+  top: 50%;
+  display: inline-block;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #08f;
+  content: "";
+  left: -8px;
+}
+
+.appointment-edit-wrapper {
+  padding-top: 10px;
+}
+
+.appointment-edit-wrapper > .form-horizontal {
+  margin-bottom: 0px;
+}
+
+.appointment-edit-wrapper .form-group {
+  margin-bottom: 5px;
+}
+
+.book-multiple-wrapper {
+  display: flex;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.edit-date-time-wrapper {
+  display: flex;
+  margin-bottom: 5px !important;
+}
+
+.edit-date-time-wrapper .vertical-label-formgroup select {
+  width: calc(100% - 5px);
+  width: -moz-calc(100% - 5px);
+}
+
+.vertical-label-formgroup {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+}
+
+.appointment-edit-wrapper .form-group label {
+  font-family: "SF UI Text Medium";
+  font-size: 12px !important;
+  font-weight: normal !important;
+  padding-left: 0px !important;
+  width: 100px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.edit-appointment-popover-footer {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.event-footer {
+  justify-content: center;
+}
+
+.event-footer .danger {
+  font-family: "SF UI Text Medium";
+}
+
+.event-title > span {
+  font-size: 20px;
+  font-family: "SF UI Text Medium";
+}
+
+/* Font face fot SF-UI-Display fonts -- ../fonts/*/
+
+@font-face {
+  font-family: "SF UI Display Bold";
+  src: url("//files.kivihealth.com/assets/doctor/calender/fonts/SF-Pro-Display-Bold.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Display Black";
+  src: url("//files.kivihealth.com/assets/doctor/calender/fonts/SF-Pro-Display-Black.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Display Heavy";
+  src: url("//files.kivihealth.com/assets/doctor/calender/fonts/SF-Pro-Display-Heavy.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Display Light";
+  src: url("//files.kivihealth.com/assets/doctor/calender/fonts/SF-Pro-Display-Light.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Display Medium";
+  src: url("//files.kivihealth.com/assets/doctor/calender/fonts/SF-Pro-Display-Medium.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Display Regular";
+  src: url("//files.kivihealth.com/assets/doctor/calender/fonts/SF-Pro-Display-Regular.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Display Semibold";
+  src: url("//files.kivihealth.com/assets/doctor/calender/fonts/SF-Pro-Display-Semibold.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Display Thin";
+  src: url("//files.kivihealth.com/assets/doctor/calender/fonts/SF-Pro-Display-Thin.woff")
+    format("woff");
+}
+
+/* Font face fot SF-UI-Text fonts */
+
+@font-face {
+  font-family: "SF UI Text Bold";
+  src: url("//files.kivihealth.com/assets/doctor/calender/fonts/SF-Pro-Text-Bold.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Text Heavy";
+  src: url("//files.kivihealth.com/assets/doctor/calender/fonts/SF-Pro-Text-Heavy.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Text Light";
+  src: url("//files.kivihealth.com/assets/doctor/calender/fonts/SF-Pro-Text-Light.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Text Medium";
+  src: url("//files.kivihealth.com/assets/doctor/calender/fonts/SF-Pro-Text-Medium.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Text Regular";
+  src: url("//files.kivihealth.com/assets/doctor/calender/fonts/SF-Pro-Text-Regular.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Text Semibold";
+  src: url("//files.kivihealth.com/assets/doctor/calender/fonts/SF-Pro-Text-Semibold.woff")
+    format("woff");
+}
+
+.tempclass {
+  padding: 20px;
+  background: white;
+  border: 1px solid;
+  position: absolute;
+  z-index: 10002;
+}
+
+/* Navigation */
+
+.dark-overlay,
+.dark-overlay-appointment-form {
+  display: none;
+  z-index: 1001;
+}
+
+.dark-overlay-webcam-dialouge {
+  display: none;
+  z-index: 1003;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.42);
+  left: 0;
+  top: 0;
+}
+
+select.form-control {
+  padding-right: 0px !important;
+}
+
+#webcam-dialouge .webcam-wrapper {
+  background: white;
+  z-index: 1004;
+  position: absolute;
+  width: 500px;
+  height: 420px;
+  left: calc(50% - 250px);
+  left: -moz-calc(50% - 250px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 0px;
+}
+
+.webcam-wrapper > .capture-button {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  background: #08f;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-family: "SF UI Text Medium";
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*.menu-wrapper{
+      height: 100%;
+      width: 260px;
+      position: absolute;
+      background: white;
+      right: -290px;
+      z-index: 1002;
+      top: 0px;
+      margin-right: 10px;
+      padding: 15px 15px;
+      overflow: auto;
+  }*/
+
+.menu-wrapper {
+  height: auto;
+  width: 450px;
+  position: absolute;
+  background: white;
+  right: 10;
+  z-index: 1002;
+  top: 55px;
+  overflow: auto;
+  display: none;
+  border-radius: 10px;
+  -moz-box-shadow: 0 1px 6px #777;
+  -webkit-box-shadow: 0 1px 6px #777;
+  -o-box-shadow: 0 1px 6px #777;
+  box-shadow: 0 1px 6px #777;
+}
+
+.menu-option-item > a {
+  color: black;
+  text-decoration: none;
+  font-family: "SF UI Text Regular";
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.menu-option-item-icon {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #08f;
+  padding: 0px;
+  border-radius: 20px;
+  background: #fff !important;
+}
+
+.menu-option-item-name {
+  font-size: 12px;
+}
+
+.dark-overlay,
+.dark-overlay-appointment-form {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.42);
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-option-row-header {
+  margin-bottom: 10px;
+  display: none;
+}
+
+.menu-option-item {
+  cursor: pointer;
+  padding: 0px 0px;
+}
+
+.menu-option-column {
+  padding: 5px 15px;
+  width: 50%;
+  margin-bottom: 0px;
+}
+
+.menu-option-column:first-child {
+  border-right: 1px solid #ccc;
+}
+
+.menu-wrapper li {
+  list-style: none;
+}
+
+/* Appointment popover */
+
+textarea {
+  height: auto !important;
+}
+
+#appointment-form {
+  height: calc(100% - 30px);
+  height: -moz-calc(100% - 30px);
+  position: absolute;
+  top: 0px;
+  left: -1030px;
+  background: #fff;
+  z-index: 1002;
+  padding: 0px 10px;
+  padding-right: 0px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+#appointment-form.jioVaccine {
+  left: -1330px;
+}
+
+.appointment-form-header-left > div > span {
+  font-size: 15px;
+  font-family: "SF UI Text Medium";
+}
+
+.appointment-form-header-left {
+  display: flex;
+  height: 49px;
+  align-items: center;
+}
+
+.appointment-form-header-left > div {
+  height: 49px;
+  align-items: center;
+  display: flex;
+  padding: 0px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-bottom: 1px;
+  border-bottom: 3px solid white;
+  padding-top: 5px;
+}
+
+.appointment-form-header-left > div.active {
+  border-bottom: 3px solid #08f;
+}
+
+.appointment-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px -10px;
+  padding: 0px 10px;
+  padding-left: 0px;
+  border-bottom: 1px solid #ccc;
+  height: 49px;
+  margin-right: 0px;
+}
+
+.appointment-form-header-right {
+  display: flex;
+  align-items: center;
+}
+
+.appointment-form-header-right .selected-date-time {
+  font-size: 12px;
+  font-family: "SF UI Text Semibold";
+  color: #08f;
+}
+
+.appointment-form-header-right .selected-date-time-wrapper {
+  margin-right: 15px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#appointment-form .selected-duration {
+  font-size: 14px !important;
+  height: 25px !important;
+  padding: 0px !important;
+}
+
+.appointment-form-content {
+  display: flex;
+  height: calc(100% - 98px);
+}
+
+.patient-profilepicture-wrapper > input {
+  display: none;
+}
+
+.patient-profilepicture-wrapper > img {
+  height: 64px;
+  width: 64px;
+  border-radius: 5px;
+}
+
+.patient-profilepicture-wrapper > div.upload-wrapper {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.patient-profilepicture-wrapper > div.upload-wrapper > span.upload-button {
+  background: #08f;
+  color: white;
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.patient-profilepicture-wrapper > div.upload-wrapper > span.material-icons {
+  margin-left: 10px;
+  font-size: 30px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.event-form-content {
+  height: calc(100% - 98px);
+  height: -moz-calc(100% - 98px);
+  width: 500px !important;
+  border-right: 0px solid !important;
+}
+
+.event-time {
+  font-size: 13px;
+  font-family: "SF UI Text Semibold";
+}
+
+.event-time-wrapper {
+  align-items: center;
+}
+
+.event-form-content .form-group > label {
+  width: 100px !important;
+}
+
+.appointment-form-wrapper {
+  height: 100%;
+}
+
+.appointment-form-wrapper > form {
+  height: 100%;
+}
+
+.appointment-form-content-left {
+  border-right: 1px solid #ccc;
+  height: 100%;
+  padding-top: 20px;
+  overflow: auto;
+  padding-right: 15px;
+  flex-basis: 50%;
+}
+
+.appointment-form-content-right {
+  height: 120%;
+  padding-top: 20px;
+  overflow: auto;
+  padding-left: 10px;
+  padding-right: 20px;
+  flex-basis: 37%;
+}
+
+.appointment-form-footer {
+  height: 49px;
+  border-top: 1px solid #ccc;
+  margin: 0px -10px;
+  padding: 0px 10px;
+  margin-right: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#appointment-form .form-group > label {
+  font-family: "SF UI Text Medium";
+  font-size: 14px !important;
+  font-weight: normal !important;
+  padding-left: 0px !important;
+  width: 140px;
+}
+
+#appointment-form label {
+  font-size: 14px !important;
+  font-weight: normal !important;
+  padding-left: 0px !important;
+}
+
+.form-check-inline {
+  margin-right: 20px;
+}
+
+.appointment-form-content-left > div.form-group,
+.appointment-form-content-right > div.form-group {
+  display: flex;
+  align-content: center;
+  margin-bottom: 16px;
+}
+
+.appointment-form-content-right > div.content-wrapper > div.form-group {
+  display: flex;
+  align-content: center;
+  margin-bottom: 16px;
+}
+
+.form-group .form-group {
+  display: flex;
+  align-content: center;
+  margin-bottom: 0px;
+  padding: 0px;
+  align-items: center;
+}
+
+#appointment-form input {
+  font-size: 13px;
+}
+
+.form-control.required-field {
+  border-color: #fdb2b2 !important;
+}
+
+.required-mark {
+  color: red;
+  margin-left: 3px;
+}
+
+.form-control {
+  font-size: 13px !important;
+  margin-left: 10px;
+  font-family: "SF UI Text Regular";
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+}
+
+.appointment-edit-wrapper .form-control {
+  font-size: 12px !important;
+}
+
+#add-followup-multiple-appointment-count,
+#add-followup-multiple-appointment-interval-count,
+#add-followup-multiple-appointment-interval-type {
+  height: 30px !important;
+}
+
+input.form-control,
+select.form-control {
+  height: 35px !important;
+}
+
+#patient-ipd-number {
+  height: 30px !important;
+}
+
+.calendar-setting-wrapper select {
+  height: 25px !important;
+}
+
+.required-option {
+  margin-bottom: 5px !important;
+}
+
+.required-content span {
+  font-size: 12px;
+  color: red;
+}
+
+.sublabel {
+  font-family: "SF UI Text Regular" !important;
+}
+
+.autocomplete-contact-field {
+  width: 100%;
+}
+
+.contact-wrapper > .react-autosuggest__container {
+  width: 100%;
+}
+
+.appointment-form-patient-name-fields
+  > .react-autosuggest__container:last-child
+  > .react-autosuggest__suggestions-container {
+  right: 0px;
+}
+
+.refer-wrapper .react-autosuggest__container {
+  width: 100%;
+}
+
+.refer-wrapper > div.refer-doctor-wrapper {
+  width: 49%;
+  margin-right: 5px;
+}
+
+.refer-wrapper > div.refer-patient-wrapper {
+  width: 90%;
+  display: flex;
+}
+
+.refer-patient-wrapper > select {
+  width: 120px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.refer-doctor-wrapper {
+  text-align: right;
+}
+
+.refer-doctor-wrapper > div {
+  text-align: left !important;
+}
+
+.refer-wrapper span {
+  color: #08f;
+  margin-top: 10px;
+  font-size: 22px;
+  text-align: right;
+  cursor: pointer;
+  margin-top: -29px;
+  position: relative;
+  right: 5;
+}
+
+.location-wrapper > .react-autosuggest__container {
+  width: 100%;
+}
+
+.caseid-wrapper > .react-autosuggest__container {
+  width: 100%;
+}
+
+.react-select-custom {
+  width: 100%;
+  font-size: 13px;
+  border-color: #ced4da !important;
+  box-shadow: none !important;
+  outline: none !important;
+  margin-right: 5px;
+}
+
+.Select-option.is-selected {
+  background-color: white !important;
+  color: #08f !important;
+}
+
+.react-select-custom > .Select-control {
+  border-color: #ced4da !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.Select-multi-value-wrapper .react-select-option-custom {
+  background-color: #08f !important;
+  color: white !important;
+  border-radius: 30px !important;
+  padding: 1px 1px;
+}
+
+.Select--multi .Select-value-icon {
+  color: #08f !important;
+  background: white !important;
+  border-radius: 10px !important;
+  font-size: 12px;
+  width: 14px;
+  height: 14px;
+  padding: 2px !important;
+  margin-left: 3px;
+  display: inline-flex !important;
+  vertical-align: middle !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.react-autosuggest__container {
+  position: relative;
+  margin-right: 5px;
+}
+
+.react-autosuggest__input--focused {
+  outline: none;
+}
+
+.react-autosuggest__input--open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+  display: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+  display: block;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  min-width: 180px;
+  border: 1px solid #d0d6db;
+  background-color: #fff;
+  font-weight: 300;
+  font-size: 13px;
+  font-family: "SF UI Text Regular";
+  border-radius: 4px;
+  z-index: 2;
+  max-height: 230px;
+  overflow: auto;
+  overflow-x: hidden;
+  z-index: 1005;
+}
+
+.react-autosuggest__suggestions-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.react-autosuggest__suggestion--highlighted {
+  background: #64b6ff21;
+  color: #444;
+  font-family: "SF UI Text Medium";
+}
+
+.react-autosuggest__suggestion-match {
+  color: red;
+  font-weight: bold;
+}
+
+.add-referral-doctor-popover-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#add-referral-doctor-popover-wrapper > h5 {
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.loader > img {
+  height: 20px;
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button-wrapper .button-save {
+  background: #08f;
+  border: none;
+  color: white;
+  font-family: "SF UI Text Regular";
+  text-shadow: none;
+  padding: 5px 15px;
+  font-size: 12px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.button-wrapper .button-cancel {
+  color: red;
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+.appointment-form-footer-left {
+  margin-left: -10px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 60%;
+}
+
+.appointment-form-footer .form-group {
+  margin: 0px !important;
+}
+
+.appointment-form-footer-left > .form-group {
+  display: flex;
+}
+
+.appointment-form-footer-left .col-form-label {
+  width: auto !important;
+  margin-right: 10px;
+}
+
+.appointment-form-footer-right {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+}
+
+/* Modal.css */
+
+.modal-button {
+  background: #fff;
+  border: none;
+  box-shadow: none;
+  color: #08f;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.modal-footer,
+.modal-header {
+  border: none;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+}
+
+/* .modal-body {
+  overflow-y: auto;
+} */
+
+.kivimodal-title {
+  font-size: 18px;
+  font-family: "SF UI Text Medium";
+  text-align: center;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  outline: 0;
+}
+
+.modal-content .form-group > label {
+  font-family: "SF UI Text Medium";
+  font-size: 14px !important;
+  font-weight: normal !important;
+  padding-left: 0px !important;
+  width: 100px;
+}
+
+.kivimodal-content {
+  margin-top: 0px;
+}
+
+.modal-content .form-horizontal label {
+  font-size: 14px !important;
+  font-weight: normal !important;
+  padding-left: 0px !important;
+}
+
+.modal-content .form-horizontal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.modal-content .form-horizontal > .form-group {
+  display: flex;
+  width: 100%;
+}
+
+.kivimodal-footer {
+  padding: 15px;
+  text-align: right;
+  width: 100%;
+}
+
+.kivimodal-footer > .success-button {
+  background: #fff;
+  border: none;
+  box-shadow: none;
+  color: #08f;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "SF UI Text Medium";
+  cursor: pointer;
+}
+
+.kivimodal-footer > .close-button {
+  background: #fff;
+  border: none;
+  box-shadow: none;
+  color: red;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "SF UI Text Regular";
+  cursor: pointer;
+}
+
+.modal-dialog {
+  min-width: 600px !important;
+}
+
+#kivi-modal {
+  display: none !important;
+}
+
+/* Scrollbar */
+
+._webkit_scroll_bar::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+._webkit_scroll_bar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+
+._webkit_scroll_bar::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+._webkit_scroll_bar::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 0, 0, 0);
+}
+
+/*------------------------------------------------------*/
+
+._webkit_scroll_bar1::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+
+._webkit_scroll_bar1::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+
+._webkit_scroll_bar1::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+._webkit_scroll_bar1::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 0, 0, 0);
+}
+
+/**
+   * React Select
+   * ============
+   * Created by Jed Watson and Joss Mackison for KeystoneJS, http://www.keystonejs.com/
+   * https://twitter.com/jedwatson https://twitter.com/jossmackison https://twitter.com/keystonejs
+   * MIT License: https://github.com/JedWatson/react-select
+  */
+.Select {
+  position: relative;
+}
+.Select input::-webkit-contacts-auto-fill-button,
+.Select input::-webkit-credentials-auto-fill-button {
+  display: none !important;
+}
+.Select input::-ms-clear {
+  display: none !important;
+}
+.Select input::-ms-reveal {
+  display: none !important;
+}
+.Select,
+.Select div,
+.Select input,
+.Select span {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.Select.is-disabled .Select-arrow-zone {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.35;
+}
+.Select.is-disabled > .Select-control {
+  background-color: #f9f9f9;
+}
+.Select.is-disabled > .Select-control:hover {
+  box-shadow: none;
+}
+.Select.is-open > .Select-control {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background: #fff;
+  border-color: #b3b3b3 #ccc #d9d9d9;
+}
+.Select.is-open > .Select-control .Select-arrow {
+  top: -2px;
+  border-color: transparent transparent #999;
+  border-width: 0 5px 5px;
+}
+.Select.is-searchable.is-open > .Select-control {
+  cursor: text;
+}
+.Select.is-searchable.is-focused:not(.is-open) > .Select-control {
+  cursor: text;
+}
+.Select.is-focused > .Select-control {
+  background: #fff;
+}
+.Select.is-focused:not(.is-open) > .Select-control {
+  border-color: #007eff;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 0 3px rgba(0, 126, 255, 0.1);
+  background: #fff;
+}
+.Select.has-value.is-clearable.Select--single > .Select-control .Select-value {
+  padding-right: 42px;
+}
+.Select.has-value.Select--single
+  > .Select-control
+  .Select-value
+  .Select-value-label,
+.Select.has-value.is-pseudo-focused.Select--single
+  > .Select-control
+  .Select-value
+  .Select-value-label {
+  color: #333;
+}
+.Select.has-value.Select--single
+  > .Select-control
+  .Select-value
+  a.Select-value-label,
+.Select.has-value.is-pseudo-focused.Select--single
+  > .Select-control
+  .Select-value
+  a.Select-value-label {
+  cursor: pointer;
+  text-decoration: none;
+}
+.Select.has-value.Select--single
+  > .Select-control
+  .Select-value
+  a.Select-value-label:hover,
+.Select.has-value.is-pseudo-focused.Select--single
+  > .Select-control
+  .Select-value
+  a.Select-value-label:hover,
+.Select.has-value.Select--single
+  > .Select-control
+  .Select-value
+  a.Select-value-label:focus,
+.Select.has-value.is-pseudo-focused.Select--single
+  > .Select-control
+  .Select-value
+  a.Select-value-label:focus {
+  color: #007eff;
+  outline: none;
+  text-decoration: underline;
+}
+.Select.has-value.Select--single
+  > .Select-control
+  .Select-value
+  a.Select-value-label:focus,
+.Select.has-value.is-pseudo-focused.Select--single
+  > .Select-control
+  .Select-value
+  a.Select-value-label:focus {
+  background: #fff;
+}
+.Select.has-value.is-pseudo-focused .Select-input {
+  opacity: 0;
+}
+.Select.is-open .Select-arrow,
+.Select .Select-arrow-zone:hover > .Select-arrow {
+  border-top-color: #666;
+}
+.Select.Select--rtl {
+  direction: rtl;
+  text-align: right;
+}
+.Select-control {
+  background-color: #fff;
+  border-color: #d9d9d9 #ccc #b3b3b3;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  color: #333;
+  cursor: default;
+  display: table;
+  border-spacing: 0;
+  border-collapse: separate;
+  height: 36px;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.Select-control:hover {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+}
+.Select-control .Select-input:focus {
+  outline: none;
+  background: #fff;
+}
+.Select-placeholder,
+.Select--single > .Select-control .Select-value {
+  bottom: 0;
+  color: #aaa;
+  left: 0;
+  line-height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.Select-input {
+  height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.Select-input > input {
+  width: 100%;
+  background: none transparent;
+  border: 0 none;
+  box-shadow: none;
+  cursor: default;
+  display: inline-block;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+  outline: none;
+  line-height: 17px;
+  /* For IE 8 compatibility */
+  padding: 8px 0 12px;
+  /* For IE 8 compatibility */
+  -webkit-appearance: none;
+}
+.is-focused .Select-input > input {
+  cursor: text;
+}
+.has-value.is-pseudo-focused .Select-input {
+  opacity: 0;
+}
+.Select-control:not(.is-searchable) > .Select-input {
+  outline: none;
+}
+.Select-loading-zone {
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 16px;
+}
+.Select-loading {
+  -webkit-animation: Select-animation-spin 400ms infinite linear;
+  -o-animation: Select-animation-spin 400ms infinite linear;
+  animation: Select-animation-spin 400ms infinite linear;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-right-color: #333;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+.Select-clear-zone {
+  -webkit-animation: Select-animation-fadeIn 200ms;
+  -o-animation: Select-animation-fadeIn 200ms;
+  animation: Select-animation-fadeIn 200ms;
+  color: #999;
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 17px;
+}
+.Select-clear-zone:hover {
+  color: #d0021b;
+}
+.Select-clear {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1;
+}
+.Select--multi .Select-clear-zone {
+  width: 17px;
+}
+.Select-arrow-zone {
+  cursor: pointer;
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 25px;
+  padding-right: 5px;
+}
+.Select--rtl .Select-arrow-zone {
+  padding-right: 0;
+  padding-left: 5px;
+}
+.Select-arrow {
+  border-color: #999 transparent transparent;
+  border-style: solid;
+  border-width: 5px 5px 2.5px;
+  display: inline-block;
+  height: 0;
+  width: 0;
+  position: relative;
+}
+.Select-control > *:last-child {
+  padding-right: 5px;
+}
+.Select--multi .Select-multi-value-wrapper {
+  display: inline-block;
+}
+.Select .Select-aria-only {
+  position: absolute;
+  display: block;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  float: left;
+}
+@-webkit-keyframes Select-animation-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes Select-animation-fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.Select-menu-outer {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top-color: #e6e6e6;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  margin-top: -1px;
+  max-height: 200px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  z-index: 1;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+}
+.Select-menu {
+  max-height: 198px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.Select-option {
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #666666;
+  cursor: pointer;
+  display: block;
+  padding: 8px 10px;
+}
+.Select-option:last-child {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.Select-option.is-selected {
+  background-color: #f5faff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.04);
+  color: #333;
+}
+.Select-option.is-focused {
+  background-color: #ebf5ff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.08);
+  color: #333;
+}
+.Select-option.is-disabled {
+  color: #cccccc;
+  cursor: default;
+}
+.Select-noresults {
+  box-sizing: border-box;
+  color: #999999;
+  cursor: default;
+  display: block;
+  padding: 8px 10px;
+}
+.Select--multi .Select-input {
+  vertical-align: middle;
+  margin-left: 10px;
+  padding: 0;
+}
+.Select--multi.Select--rtl .Select-input {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.Select--multi.has-value .Select-input {
+  margin-left: 5px;
+}
+.Select--multi .Select-value {
+  background-color: #ebf5ff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.08);
+  border-radius: 2px;
+  border: 1px solid #c2e0ff;
+  /* Fallback color for IE 8 */
+  border: 1px solid rgba(0, 126, 255, 0.24);
+  color: #007eff;
+  display: inline-block;
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin-left: 5px;
+  margin-top: 5px;
+  vertical-align: top;
+}
+.Select--multi .Select-value-icon,
+.Select--multi .Select-value-label {
+  display: inline-block;
+  vertical-align: middle;
+}
+.Select--multi .Select-value-label {
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  cursor: default;
+  padding: 2px 5px;
+}
+.Select--multi a.Select-value-label {
+  color: #007eff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.Select--multi a.Select-value-label:hover {
+  text-decoration: underline;
+}
+.Select--multi .Select-value-icon {
+  cursor: pointer;
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+  border-right: 1px solid #c2e0ff;
+  /* Fallback color for IE 8 */
+  border-right: 1px solid rgba(0, 126, 255, 0.24);
+  padding: 1px 5px 3px;
+}
+.Select--multi .Select-value-icon:hover,
+.Select--multi .Select-value-icon:focus {
+  background-color: #d8eafd;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 113, 230, 0.08);
+  color: #0071e6;
+}
+.Select--multi .Select-value-icon:active {
+  background-color: #c2e0ff;
+  /* Fallback color for IE 8 */
+  background-color: rgba(0, 126, 255, 0.24);
+}
+.Select--multi.Select--rtl .Select-value {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.Select--multi.Select--rtl .Select-value-icon {
+  border-right: none;
+  border-left: 1px solid #c2e0ff;
+  /* Fallback color for IE 8 */
+  border-left: 1px solid rgba(0, 126, 255, 0.24);
+}
+.Select--multi.is-disabled .Select-value {
+  background-color: #fcfcfc;
+  border: 1px solid #e3e3e3;
+  color: #333;
+}
+.Select--multi.is-disabled .Select-value-icon {
+  cursor: not-allowed;
+  border-right: 1px solid #e3e3e3;
+}
+.Select--multi.is-disabled .Select-value-icon:hover,
+.Select--multi.is-disabled .Select-value-icon:focus,
+.Select--multi.is-disabled .Select-value-icon:active {
+  background-color: #fcfcfc;
+}
+@keyframes Select-animation-spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes Select-animation-spin {
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+
+/* Date range picker css starts here */
+
+.daterangepicker td.available:hover,
+.daterangepicker th.available:hover {
+  background-color: #fff !important;
+}
+
+.daterangepicker select.monthselect {
+  width: 40% !important;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+  background-color: #fff !important;
+  color: #08f !important;
+  font-weight: bold;
+}
+
+.daterangepicker .calendar-table th,
+.daterangepicker .calendar-table td {
+  min-width: 37px !important;
+  width: 37px !important;
+  height: 32px !important;
+  font-size: 13px !important;
+}
+
+.daterangepicker .calendar-time {
+  margin: 10px auto 10 auto !important;
+}
+
+.calendar-table tr:not(:first-child) > td.off {
+  display: none !important;
+}
+
+.calendar-table tr:first-child > td.off {
+  visibility: hidden !important;
+}
+
+.daterangepicker .drp-buttons .btn {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  background: white;
+  color: #08f;
+}
+
+.daterangepicker .drp-buttons {
+  display: flex !important;
+  justify-content: space-between !important;
+  border: none !important;
+}
+
+.daterangepicker .drp-buttons .btn.cancelBtn {
+  font-family: "SF UI Text Regular";
+  color: red !important;
+  background: white !important;
+  margin-left: 0px !important;
+}
+
+.daterangepicker .drp-buttons .btn.applyBtn {
+  font-family: "SF UI Text Medium";
+  color: #08f !important;
+  background: white !important;
+}
+
+.daterangepicker .drp-calendar {
+  max-width: 300px !important;
+}
+
+.daterangepicker {
+  -moz-box-shadow: 0px 2px 10px #777;
+  -webkit-box-shadow: 0px 2px 10px #777;
+  -o-box-shadow: 0px 2px 10px #777;
+  box-shadow: 0px 2px 10px #777;
+  border: none;
+  border-radius: 6px;
+}
+
+.alerts.alert_icon {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAEACAYAAAADRnAGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1MjQxZGRiMS02MzFiLTRiZmItODBkZS02Zjk1MjM4NmMxYzgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTVDRjAwQkFCMzZFMTFFM0E3QjVFMUEyRkM1MjNCMUUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTVDRjAwQjlCMzZFMTFFM0E3QjVFMUEyRkM1MjNCMUUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6YTI3MWU1YjItMGNkNS00MWNmLTk4ZmEtYjAwZDRjNzMzYjU1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjUyNDFkZGIxLTYzMWItNGJmYi04MGRlLTZmOTUyMzg2YzFjOCIvPiA8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);
+  background-repeat: no-repeat;
+  background-size: 16px 64px !important;
+  width: 16px !important;
+  height: 16px !important;
+  margin-right: 0px !important;
+  min-width: 16px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.event-content {
+  display: flex;
+  height: calc(100% - 98px);
+}
+
+.event-content > .event-form-content.appointment-form-content-left {
+  flex-basis: 100%;
+}
